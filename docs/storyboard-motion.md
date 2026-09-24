@@ -51,7 +51,3 @@ Atualização isolada do capítulo #contato conforme os três novos prints. Foto
 Entrada GSAP da foto, stagger discreto no conteúdo e pequeno movimento do mascote, todos no matchMedia de movimento permitido. Hover apenas em pointer fino; links com foco visível e área de toque mínima de 44 px. Imagens locais com dimensões e lazy loading.
 
 Conferência visual: desktop 1280×720, tablet 820×1180, mobile 390×844. Largura da página e rodapé no mobile: 390 px. Sem erros ou avisos no console. CSS/JS versionados na URL para invalidar cache da versão anterior.
-
-## Limpeza de elementos repetidos — 25/09/2026
-
-Removidos os índices de capítulo do rodapé das seções, a legenda auxiliar de rolagem da colagem, o crédito de referências, o atalho visual para serviços avulsos e o número de capítulo do rodapé final. Mantida a assinatura e o mascote no rodapé final. Os índices de navegação e a numeração das etapas do processo continuam como orientação funcional.
