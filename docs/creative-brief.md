@@ -32,3 +32,7 @@ A abertura usa 0,35 viewport de movimento fixo no desktop. Videomaker usa 0,45. 
 - Mobile recomposto com título acima do rosto, post-it à esquerda e CTA inferior.
 - Verificado em 1440×900, 390×844 e 360×780; sem overflow horizontal nos dois tamanhos mobile. CTA navega para universo; menu abre; scroll modifica as camadas. Nenhum erro de console observado no teste de 390×844. Sintaxe de hero.js validada.
 - Instrument Serif e Caveat são substituições web; Silver Garden não foi fornecida como fonte licenciada.
+
+
+## Atualização de 24/09/2026
+Os prints mais recentes são a autoridade visual. Hero com Malu central/post-it, seguida imediatamente pela colagem da mente criativa. Implementação atual: `dist/index.html`, `storyboard.css`, `storyboard.js`. Consulte `storyboard-motion.md` para mapeamento, limitações dos assets e verificação.

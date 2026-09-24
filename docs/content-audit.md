@@ -80,3 +80,7 @@ Antes de qualquer etapa de design/conteúdo: confirmar identidade e contato ofic
 ## Revisão para implementação — 2026-09-23
 
 A contagem anterior estava incorreta: são 71 arquivos totais, 67 assets e 4 .DS_Store. A fonte correta é Gayathri; Imperial Script também aparece no manual. A prancha Cores/1x/Ativo 47.png explicita #E4DFC9, #F29E44 e #CAD940. O perfil @amalucria aparece nas pranchas/templates, mas sua atualidade não foi verificada. Os serviços confirmados diretamente pelo usuário são Social Media, Storymaker e Videomaker Móbile. Não há clipes de vídeo. A imagem incorporada no PDF p. 6 permite separar dez fotografias sem as palavras sobrepostas do layout; resolução individual limitada a cerca de 435 × 550 px. Afirmações anteriores de ausência de códigos cromáticos ficam corrigidas por esta leitura.
+
+
+## Atualização de 24/09/2026
+Os prints mais recentes são a autoridade visual. Hero com Malu central/post-it, seguida imediatamente pela colagem da mente criativa. Implementação atual: `dist/index.html`, `storyboard.css`, `storyboard.js`. Consulte `storyboard-motion.md` para mapeamento, limitações dos assets e verificação.
