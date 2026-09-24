@@ -42,3 +42,12 @@ Os prints mais recentes prevalecem sobre todas as direções anteriores. Ordem e
 - Console sem erros ou avisos após as correções. Assets HTML, âncoras e IDs checados; JavaScript passou em `node --check`.
 - Retrato responsivo JPEG: 99 KB, 243 KB e 456 KB; PNG original de 5 MB preservado.
 - Reduced motion revisado no código; emulação da preferência não disponível nesta sessão de navegador.
+
+
+## Rodapé final — 25/09/2026
+
+Atualização isolada do capítulo #contato conforme os três novos prints. Foto original `malu-peek.png` à esquerda, bloco de logo/headline/destaque lima/copy/onda/CTA à direita. No mobile, foto acima e conteúdo abaixo. Mascote na assinatura inferior; @malucria preservado no CTA e Instagram @malu.criare com link explícito. Os dois links de contato apontam para https://www.instagram.com/malu.criare/.
+
+Entrada GSAP da foto, stagger discreto no conteúdo e pequeno movimento do mascote, todos no matchMedia de movimento permitido. Hover apenas em pointer fino; links com foco visível e área de toque mínima de 44 px. Imagens locais com dimensões e lazy loading.
+
+Conferência visual: desktop 1280×720, tablet 820×1180, mobile 390×844. Largura da página e rodapé no mobile: 390 px. Sem erros ou avisos no console. CSS/JS versionados na URL para invalidar cache da versão anterior.

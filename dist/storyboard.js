@@ -30,10 +30,14 @@
   document.querySelectorAll('.hero-stroke').forEach(p=>{const l=p.getTotalLength();reveal.fromTo(p,{strokeDasharray:l,strokeDashoffset:l},{strokeDashoffset:0,duration:1.2},2.1);});
   const exit=gsap.timeline({scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:.8},defaults:{ease:'none'}});
   exit.fromTo('.hero-type-back',{xPercent:0,y:0},{xPercent:-6,y:-60},0).fromTo('.hero-type-front',{xPercent:0,y:0},{xPercent:4,y:-25},0).fromTo('.hero-person',{y:0},{y:70},0).fromTo('.hero-note',{y:0},{y:-80},0).fromTo('.hero-drawing',{y:0},{y:70},0);
-  document.querySelectorAll('.scene:not(.package):not(.collage) h2,.scene:not(.package) h3').forEach(el=>gsap.from(el,{y:30,clipPath:'inset(0 0 100% 0)',duration:.85,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 94%',once:true}}));
+  document.querySelectorAll('.scene:not(.package):not(.collage):not(.contact) h2,.scene:not(.package):not(.contact) h3').forEach(el=>gsap.from(el,{y:30,clipPath:'inset(0 0 100% 0)',duration:.85,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 94%',once:true}}));
   document.querySelectorAll('mark').forEach(el=>gsap.from(el,{backgroundSize:'0% 100%',duration:.8,ease:'power2.inOut',scrollTrigger:{trigger:el,start:'top 90%',once:true}}));
   document.querySelectorAll('.drawn path').forEach(p=>{const l=p.getTotalLength();gsap.fromTo(p,{strokeDasharray:l,strokeDashoffset:l},{strokeDashoffset:0,ease:'none',scrollTrigger:{trigger:p.closest('section,footer'),start:'top 80%',end:'center 45%',scrub:.8}});});
   document.querySelectorAll('.services-grid,.management-list,.extras-grid,.process ol,.skins-grid').forEach(group=>gsap.from([...group.children].filter(e=>!e.classList.contains('wave')),{y:35,rotation:1.5,stagger:.09,duration:.8,ease:'power3.out',scrollTrigger:{trigger:group,start:'top 88%',once:true}}));
+  const contactReveal=gsap.timeline({scrollTrigger:{trigger:'.contact',start:'top 82%',once:true},defaults:{ease:'power3.out'}});
+  contactReveal.from('.contact-portrait img',{x:-35,y:24,opacity:0,duration:1.15});
+  gsap.from('.contact-logo,.contact h2,.contact-copy,.contact-actions',{y:20,opacity:0,stagger:.12,duration:.8,ease:'power2.out',scrollTrigger:{trigger:'.contact-content',start:'top 88%',once:true}});
+  gsap.from('.contact-mascot',{rotation:-8,y:5,duration:1.1,ease:'sine.out',scrollTrigger:{trigger:'.contact-bottom',start:'top 98%',once:true}});
   gsap.from('.template-paper',{y:90,rotation:i=>[4,-3,5][i],stagger:.14,duration:1.05,ease:'power3.out',scrollTrigger:{trigger:'.template-grid',start:'top 88%',once:true}});
   gsap.to('.portfolio-intro>.burst',{rotation:150,ease:'none',scrollTrigger:{trigger:'.portfolio-intro',start:'top bottom',end:'bottom top',scrub:1}});
   gsap.from('.fruit',{y:35,rotation:-5,duration:1,scrollTrigger:{trigger:'.essence',start:'top 50%',once:true}});
