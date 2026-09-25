@@ -38,7 +38,6 @@
   contactReveal.from('.contact-portrait img',{x:-35,y:24,opacity:0,duration:1.15});
   gsap.from('.contact-logo,.contact h2,.contact-copy,.contact-actions',{y:20,opacity:0,stagger:.12,duration:.8,ease:'power2.out',scrollTrigger:{trigger:'.contact-content',start:'top 88%',once:true}});
   gsap.from('.contact-mascot',{rotation:-8,y:5,duration:1.1,ease:'sine.out',scrollTrigger:{trigger:'.contact-bottom',start:'top 98%',once:true}});
-  gsap.from('.template-paper',{y:90,rotation:i=>[4,-3,5][i],stagger:.14,duration:1.05,ease:'power3.out',scrollTrigger:{trigger:'.template-grid',start:'top 88%',once:true}});
   gsap.to('.portfolio-intro>.burst',{rotation:150,ease:'none',scrollTrigger:{trigger:'.portfolio-intro',start:'top bottom',end:'bottom top',scrub:1}});
   gsap.from('.fruit',{y:35,rotation:-5,duration:1,scrollTrigger:{trigger:'.essence',start:'top 50%',once:true}});
   const collage=gsap.timeline({scrollTrigger:{trigger:'.collage',start:'top 88%',end:'top 10%',scrub:1},defaults:{ease:'power2.out'}});
