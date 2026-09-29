@@ -20,6 +20,9 @@
    .fromTo(section.querySelector('.sm-rays'),{y:3},{y:-3},0)
    .fromTo(section.querySelector('.sm-spark'),{y:5,rotation:-10},{y:-5,rotation:-6},0)
    .fromTo(section.querySelector('.sm-squiggle'),{y:4},{y:-4},0);
+  return()=>{
+   gsap.set([section.querySelector('.sm-depth'),section.querySelector('.sm-rays'),section.querySelector('.sm-spark'),section.querySelector('.sm-squiggle')],{clearProps:'transform'});
+  };
  });
  window.addEventListener('pagehide',()=>mm.revert(),{once:true});
 })();
