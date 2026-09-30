@@ -31,13 +31,13 @@ header{position:absolute;left:0;top:0;width:100%;z-index:60;display:flex;align-i
 .contact-copy em{font-style:normal;font-size:1.12em}
 .contact-content>.wave{position:relative;margin:14px auto 10px;color:var(--orange);width:min(80%,420px);height:24px}
 .contact-actions{display:flex;align-items:center;flex-direction:column;gap:12px}
-.contact-pill{display:flex;gap:clamp(18px,2.6vw,44px);justify-content:center;align-items:center;width:max-content;max-width:100%;min-height:56px;padding:15px 28px 10px;background:var(--cream);border-radius:99px;font-size:clamp(17px,1.5vw,24px);line-height:1.2;transition:background .25s ease,transform .25s ease}
-.contact-pill>span{white-space:nowrap}.contact-arrow{display:inline-block;margin-left:6px;transition:transform .25s ease}
+.contact-pill{display:flex;gap:12px;justify-content:center;align-items:center;width:max-content;max-width:100%;min-height:56px;padding:15px 32px 10px;background:var(--cream);border-radius:99px;font-size:clamp(17px,1.5vw,24px);line-height:1.2;transition:background .25s ease,transform .25s ease}
+.contact-whatsapp{flex-shrink:0;width:clamp(19px,1.4vw,22px);height:clamp(19px,1.4vw,22px);transition:transform .25s ease}.contact-pill>span{white-space:nowrap}.contact-arrow{display:inline-block;margin-left:6px;transition:transform .25s ease}
 .contact-instagram{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;min-height:44px;font-size:clamp(16px,1.2vw,20px);line-height:1.2;text-underline-offset:5px}
 .contact-instagram span{padding-top:4px}.contact-instagram svg{flex-shrink:0;transition:transform .25s ease}
 .contact-bottom{position:absolute;bottom:24px;left:32%;right:4%;display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left;font-size:clamp(12px,1.05vw,18px);line-height:1.2}
 .contact-signature{display:flex;align-items:center;gap:12px}.contact-signature>span{padding-top:5px}.contact-mascot{width:48px;height:44px;object-fit:contain;transform-origin:50% 85%}
-@media(hover:hover) and (pointer:fine){.contact-pill:hover{background:var(--lime);transform:translateY(-2px)}.contact-pill:hover .contact-arrow{transform:translate(2px,-2px)}.contact-instagram:hover{text-decoration:underline}.contact-instagram:hover svg{transform:rotate(-7deg)}}
+@media(hover:hover) and (pointer:fine){.contact-pill:hover{background:var(--lime);transform:translateY(-2px)}.contact-pill:hover .contact-arrow{transform:translate(2px,-2px)}.contact-pill:hover .contact-whatsapp{transform:rotate(-8deg)}.contact-instagram:hover{text-decoration:underline}.contact-instagram:hover svg{transform:rotate(-7deg)}}
 @media(min-width:761px) and (max-width:1050px){.contact{grid-template-columns:37% 63%;min-height:720px}.contact-portrait{width:38%}.contact-portrait img{height:88%;position:absolute;bottom:0}.contact-content{padding:60px 4vw 110px 0}.contact h2{font-size:4.4vw}.contact-copy{font-size:24px}.contact-bottom{left:30%}}
 @media(min-width:761px) and (max-aspect-ratio:4/3){.scene{min-height:70vw}.hero-editorial{min-height:70vw;height:85svh}.hero-person{top:0}.collage{height:65vw}.package{min-height:70vw}.hero-natural{font-size:15vw}}
 @media(max-width:760px){
@@ -62,11 +62,11 @@ header{position:absolute;left:0;top:0;width:100%;z-index:60;display:flex;align-i
  .contact h2{font-size:clamp(28px,7.8vw,49px);line-height:1.12;margin:0}
  .contact-copy{font-size:clamp(21px,5.5vw,29px);line-height:1.3;margin:24px auto 0;max-width:470px}
  .contact-content>.wave{width:78%;max-width:360px;height:22px;margin:17px auto 12px}
- .contact-pill{gap:20px;padding:15px 21px 10px;font-size:17px;min-height:56px}
+ .contact-pill{gap:10px;padding:15px 24px 10px;font-size:17px;min-height:56px}
  .contact-instagram{font-size:17px}.contact-actions{gap:8px}
  .contact-bottom{position:relative;inset:auto;width:100%;padding:0 6vw;margin-top:4px;font-size:12px;gap:12px}
  .contact-signature{gap:8px}.contact-mascot{width:36px;height:36px}
- @media(max-width:359px){.contact-pill{gap:12px;padding-inline:17px;font-size:16px}.contact-bottom{font-size:11px}}
+ @media(max-width:359px){.contact-pill{gap:8px;padding-inline:18px;font-size:16px}.contact-bottom{font-size:11px}}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.loader{display:none!important}}
 
