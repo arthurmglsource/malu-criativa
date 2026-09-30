@@ -1,0 +1,23 @@
+{
+  "name": "Malu — Naturalmente criativa",
+  "short_name": "Malu",
+  "description": "Social Media, Storymaker e Videomaker Móbile. Ideias que conectam pessoas reais.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f7ed",
+  "theme_color": "#E4DFC9",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
