@@ -60,7 +60,7 @@ header{position:absolute;left:0;top:0;width:100%;z-index:60;display:flex;align-i
 }
 @media(min-width:761px) and (max-width:1050px){.malu h2 img{width:18vw;margin:0 0 0 1vw;transform:translateY(-2.8vw)}.contact{grid-template-columns:37% 63%;min-height:720px}.contact-portrait{width:38%}.contact-portrait img{height:88%;position:absolute;bottom:0}.contact-content{padding:60px 4vw 110px 0}.contact h2{font-size:4.4vw}.contact-copy{font-size:24px}.contact-bottom{left:30%;right:3%;flex-wrap:wrap;gap:8px 16px}.contact-legal{gap:10px}}
 @media(min-width:761px) and (max-aspect-ratio:4/3){.scene{min-height:70vw}.hero-editorial{min-height:70vw;height:85svh}.hero-person{top:0}.collage{height:65vw}.package{min-height:70vw}.hero-natural{font-size:15vw}}
-@media(max-width:760px){
+@media(max-width:1024px){
  html{scroll-padding-top:15px}header{padding:15px 5vw}header img{width:64px}header button{font-size:14px}.hero-editorial{height:100svh;min-height:680px}.hero-person{width:115%;left:-4%;top:21%}.hero-type-back{top:18%;left:4%;width:94%;z-index:4}.hero-natural{font-size:12.9vw;letter-spacing:-.09em}.hero-type-front{top:26%;left:4%;z-index:4}.hero-creative{font-size:29vw}.hero-note{left:6%;top:64%;width:38%;transform:rotate(-8deg)}.hero-note-paper{padding:18px 20px 15px}.hero-note p{font-size:26px}.hero-spark{left:83%;top:46%;width:10vw;height:10vw}.hero-drawing{left:8%;top:24%;width:90%;height:78%}.hero-person-reveal{height:auto}.hero-grain{opacity:.045}
  .scene{min-height:0;padding:60px 6vw 70px}.scene h2{font-size:11vw}.burst{width:28px;height:28px}.wave{width:65vw;height:16px}.arrow{width:90px;height:90px}
  .collage{height:83svh;min-height:620px;padding:0}.collage-canvas{top:15%;height:85%;width:168%;left:-34%}.collage h2{top:0;left:23%;width:56%}.collage h2>span{font-size:12.8vw}.collage h2>em{font-size:27vw;margin-top:6px}.collage-piece{height:100%;top:6%;width:100%}
@@ -93,6 +93,91 @@ header{position:absolute;left:0;top:0;width:100%;z-index:60;display:flex;align-i
 
 /* Refinements after desktop comparison with the approved prints. */
 mark{background-color:transparent!important}.piece-junction{z-index:1}.hero-drawing{left:27%;top:5%;width:61%;height:94%;transform:none}.hero-drawing path{stroke-width:6}.collage-piece{pointer-events:none}
-@media(max-width:760px){.hero-drawing{left:8%;top:24%;width:90%;height:78%}.collage{height:83svh;min-height:620px}}
+@media(max-width:1024px){.hero-drawing{left:8%;top:24%;width:90%;height:78%}.collage{height:83svh;min-height:620px}}
 
-@media(max-width:760px){.hero-person{top:28%}.hero-type-front{top:23%}}
+@media(max-width:1024px){.hero-person{top:28%}.hero-type-front{top:23%}}
+
+/* Compact layout: content sets the height; desktop rules above remain unchanged. */
+@media(max-width:1024px){
+ .scene{min-height:0;padding-block:clamp(40px,10vw,64px)}
+ .hero-editorial{height:clamp(570px,155vw,760px);min-height:0}
+ .hero-person{width:115%;left:-4%;top:5%}
+ .hero-type-back{top:39%;left:4%;z-index:2}
+ .hero-natural{font-size:14vw}
+ .hero-type-front{top:54%;left:4%;z-index:4}
+ .hero-creative{font-size:29vw}
+ .hero-note{top:auto;bottom:7%;left:5%;width:31%;transform:rotate(-8deg)}
+ .hero-note-paper{padding:clamp(12px,3.5vw,24px)}
+ .hero-note p{font-size:clamp(20px,5.5vw,32px)}
+ .hero-spark{left:84%;top:27%;width:9vw;height:9vw}
+ .hero-drawing{left:9%;top:8%;width:86%;height:88%}
+ .collage{height:108vw;min-height:0;padding:0}
+ .collage-canvas{inset:0 auto auto -20%;width:140%;height:100%}
+ .collage h2{left:17%;top:5vw;width:70%}
+ .collage h2>span{font-size:12.8vw}
+ .collage h2>em{font-size:25vw}
+ .collage-piece{top:25vw;height:73.7vw;width:100%}
+ .references h2{font-size:clamp(19px,5.2vw,28px)}
+ .reference-copy h3{font-size:clamp(30px,8vw,48px)}
+ .reference-copy p,.skins-copy>p,.essence-left p,.extras>p{font-size:clamp(20px,6vw,28px)}
+ .skins{gap:28px;padding-block:36px}
+ .skins-main{max-height:none;width:min(100%,480px);align-self:center}
+ .skins-copy{width:100%;min-width:0}
+ .skins-copy h2{font-size:clamp(38px,11vw,64px)}
+ .skins-grid{grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(2,24vw);gap:6px;align-items:center}
+ .skins-grid svg,.skins-grid svg:first-child{width:100%;height:100%}
+ .essence{display:grid;grid-template-columns:28% minmax(0,1fr);gap:28px 20px;padding:44px 7vw;background:var(--cream)}
+ .essence-left{grid-column:1/-1;margin:-44px -7vw 0;padding:44px 7vw 32px;background:var(--lime)}
+ .essence-left h2{font-size:clamp(32px,9vw,58px)}
+ .essence-right{grid-column:2;grid-row:2;padding:0;min-width:0}
+ .essence-right p{font-size:clamp(28px,8vw,48px)}
+ .essence-right .wave{width:100%;margin-top:16px}
+ .mascot{position:static;grid-column:1;grid-row:2;width:100%;align-self:center}
+ .fruit{position:static;grid-column:2;grid-row:3;width:80%;height:auto;aspect-ratio:580/300;justify-self:end}
+ .services h2{font-size:clamp(40px,12vw,68px)}
+ .service-subtitle{font-size:clamp(23px,6.5vw,36px)}
+ .service-card{min-height:0}
+ .service-card h3{font-size:clamp(28px,8vw,38px)}
+ .service-card p{font-size:clamp(19px,5.5vw,24px)}
+ .management h2{font-size:clamp(42px,14vw,72px)}
+ .management>div>p{font-size:clamp(24px,7.5vw,34px)}
+ .management-list>div{font-size:clamp(20px,5.5vw,26px)}
+ .package{min-height:0;padding-block:clamp(44px,10vw,64px)}
+ .package h2{font-size:clamp(34px,10.5vw,64px)}
+ .package h3{font-size:clamp(22px,6.5vw,34px)}
+ .package-copy>p{font-size:clamp(20px,6vw,28px)}
+ .includes h3{font-size:clamp(36px,12vw,52px)}
+ .includes li{font-size:clamp(19px,5.5vw,26px)}
+ .extras h2{font-size:clamp(28px,8vw,46px)}
+ .extras h2>span{font-size:clamp(40px,13vw,68px)}
+ .extras-grid a{font-size:clamp(18px,5vw,25px);min-width:0;overflow-wrap:normal}
+ .process h2{font-size:clamp(40px,13vw,72px)}
+ .process h3{font-size:clamp(30px,9vw,48px)}
+ .step{font-size:clamp(32px,10vw,48px)}
+ .process h4{font-size:clamp(25px,7vw,34px)}
+ .process li p{font-size:clamp(19px,5.5vw,25px)}
+ .contact{padding:0 0 24px}
+ .contact-bottom,.contact-signature,.contact-legal{max-width:100%;min-width:0}
+ .contact-signature{flex-shrink:1}
+}
+@media(min-width:600px) and (max-width:1024px){
+ .hero-editorial{height:100vw;max-height:850px}
+ .hero-person{width:82%;left:15%;top:-4%}
+ .hero-type-back{top:35%}.hero-type-front{top:52%}
+ .hero-creative{font-size:25vw}
+ .hero-note{left:6%;width:24%;bottom:2%}
+ .hero-note-paper{padding:18px}
+ .hero-note p{font-size:28px}
+ .collage{height:78vw}.collage-canvas{left:0;width:100%}
+ .collage h2{left:4%;width:92%;top:4vw}
+ .collage h2>span{font-size:14vw}.collage h2>em{font-size:20vw}
+ .collage-piece{top:21vw;height:52.63vw}
+ .reference-grid{grid-template-columns:repeat(4,minmax(0,1fr));aspect-ratio:3.2/1}
+ .skins-grid{grid-template-rows:repeat(2,20vw)}
+ .services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .extras-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .process ol{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+ .process .arrow{display:none}
+ .contact-portrait{height:440px}
+ .contact-portrait img{left:calc(50% - 205px)}
+}

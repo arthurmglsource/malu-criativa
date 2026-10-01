@@ -26,7 +26,7 @@
  .storymaker .sm-person img{position:static;height:100%;object-position:center center}
  .storymaker .sm-rays{top:9%}.storymaker .sm-spark{top:13%}.storymaker .sm-squiggle{bottom:13%}
 }
-@media(max-width:760px){
+@media(max-width:1024px){
  .storymaker{min-height:0;padding:60px 6vw 0}
  .storymaker .sm-copy{width:100%}.storymaker .sm-copy h2{font-size:16vw}
  .storymaker .sm-copy h3{font-size:7vw;line-height:1.2;white-space:normal;margin-top:10px;letter-spacing:-.02em}
@@ -42,3 +42,12 @@
  .storymaker .sm-doodle path{stroke-width:5}
 }
 @media(prefers-reduced-motion:reduce){.storymaker .story-tags span{transition:none}.storymaker .story-tags span:hover{transform:none}}
+
+@media(max-width:1024px){
+ .storymaker{padding-top:clamp(40px,10vw,64px);padding-bottom:0}
+ .storymaker .sm-copy h2{font-size:clamp(50px,16vw,96px)}
+ .storymaker .sm-copy h3{font-size:clamp(23px,7vw,40px)}
+ .storymaker .sm-copy>p{font-size:clamp(20px,6vw,28px)}
+ .storymaker .story-tags span{font-size:clamp(15px,4.5vw,24px)}
+ .storymaker .sm-art{max-width:540px;margin-inline:auto}
+}

@@ -14,7 +14,7 @@
    art.fromTo(path,{strokeDasharray:length,strokeDashoffset:length},{strokeDashoffset:0,duration:.6},.4+i*.07);
   });
  });
- mm.add('(min-width: 761px) and (prefers-reduced-motion: no-preference)',()=>{
+ mm.add('(min-width: 1025px) and (prefers-reduced-motion: no-preference)',()=>{
   const depth=gsap.timeline({scrollTrigger:{trigger:section,start:'top bottom',end:'bottom top',scrub:1},defaults:{ease:'none'}});
   depth.fromTo(section.querySelector('.sm-depth'),{y:7},{y:-7},0)
    .fromTo(section.querySelector('.sm-rays'),{y:3},{y:-3},0)
